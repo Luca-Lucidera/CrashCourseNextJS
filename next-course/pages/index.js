@@ -33,7 +33,9 @@ export async function getServerSideProps(context) {
   const res = context.res;
   //fetch dei dati
   return {
-    props: dummy,
+    props: {
+      meetups: dummy
+    },
   };
 }
 /*
